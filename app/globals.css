@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&family=Raleway:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .page-height {
+    @apply py-10 z-40 min-h-[calc(100vh-112px)] backdrop-blur-[1px];
+  }
+  .input {
+    @apply outline-1 outline-gray-300 outline focus:outline-gray-500 p-2 h-10 w-auto rounded-sm;
+  }
+  .h1 {
+    @apply text-3xl relative font-bold flex flex-col;
+  }
+
+  .button {
+    @apply bg-gray-700 text-white p-2 rounded-sm hover:bg-black transition-all;
+  }
+}
