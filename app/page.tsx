@@ -63,7 +63,7 @@ export default function Home() {
   );
 }
 
-export const Job = ({
+const Job = ({
   title,
   desc,
   tech,
